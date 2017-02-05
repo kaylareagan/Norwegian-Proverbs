@@ -1,0 +1,29 @@
+<html>
+<head>
+	
+<link rel="stylesheet" href="style.css">
+<script type='text/javascript' src='proverb.js'></script>
+<script type='text/javascript' src='colors.js'></script>
+
+<script>
+	var showProverb = function(){
+		console.log('clicked');
+		let proverb = pickRandomProverb();
+		document.getElementById('test').innerHTML = proverb;
+
+		let color = pickRandomColors();
+		document.body.style.backgroundColor = color;
+
+	}
+</script>
+</head>
+<body>
+
+<div>
+<p id="test"></p>
+
+<button onClick="showProverb()">Click For A Proverb!</button>
+</div>
+
+</body>
+</html>
